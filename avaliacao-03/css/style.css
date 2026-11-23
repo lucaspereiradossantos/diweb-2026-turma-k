@@ -1,0 +1,382 @@
+/* Estilos gerais do site Pixel Arena */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #11111b;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Cabeçalho e menu usados nas quatro páginas */
+header {
+    background-color: #1b1b2b;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #343449;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #65ded8;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+nav a {
+    color: #d0d0dc;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #65ded8;
+}
+
+nav .nav-cta {
+    background-color: #65ded8;
+    color: #11111b;
+    padding: 9px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Botões */
+.botao {
+    display: inline-block;
+    background-color: #65ded8;
+    color: #11111b;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #8af0e9;
+}
+
+/* Página inicial */
+.banner {
+    padding: 75px 10%;
+    background: linear-gradient(120deg, #242044, #17172a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.banner-texto {
+    max-width: 560px;
+}
+
+.destaque {
+    color: #65ded8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.banner h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+.banner h1 span {
+    color: #a98aff;
+}
+
+.banner p {
+    color: #c4c4d0;
+    margin-bottom: 25px;
+}
+
+.banner-imagem {
+    font-size: 125px;
+    text-align: center;
+    min-width: 220px;
+}
+
+.conteudo {
+    width: 86%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 0;
+}
+
+.titulo-secao {
+    margin-bottom: 25px;
+}
+
+.titulo-secao h2 {
+    margin: 5px 0;
+    font-size: 28px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.categoria {
+    background-color: #202033;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #343449;
+}
+
+.categoria .icone {
+    font-size: 35px;
+}
+
+.categoria h3 {
+    margin-bottom: 5px;
+}
+
+.categoria p {
+    color: #b9b9c8;
+    margin: 0;
+    font-size: 14px;
+}
+
+.chamada {
+    margin-top: 45px;
+    padding: 35px;
+    background-color: #49347c;
+    border-radius: 10px;
+}
+
+.chamada h2 {
+    margin-top: 0;
+}
+
+/* Páginas de login e cadastro */
+.area-formulario {
+    min-height: 75vh;
+    padding: 45px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 460px;
+    padding: 30px;
+    background-color: #202033;
+    border: 1px solid #343449;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.formulario .descricao {
+    color: #b9b9c8;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 14px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #48485e;
+    border-radius: 5px;
+    background-color: #141421;
+    color: white;
+}
+
+.formulario input:focus {
+    outline: 2px solid #a98aff;
+}
+
+.formulario .botao {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.texto-formulario {
+    text-align: center;
+    color: #b9b9c8;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.texto-formulario a {
+    color: #65ded8;
+    font-weight: bold;
+}
+
+/* Catálogo de produtos */
+.cabecalho-produtos {
+    padding: 45px 0 25px;
+}
+
+.cabecalho-produtos h1 {
+    font-size: 38px;
+    margin: 5px 0;
+}
+
+.cabecalho-produtos p {
+    color: #b9b9c8;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.produto {
+    background-color: #202033;
+    border: 1px solid #343449;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.produto-imagem {
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 58px;
+    background-color: #39305e;
+}
+
+.produto:nth-child(2) .produto-imagem { background-color: #234c69; }
+.produto:nth-child(3) .produto-imagem { background-color: #74442e; }
+.produto:nth-child(4) .produto-imagem { background-color: #286057; }
+.produto:nth-child(5) .produto-imagem { background-color: #693d65; }
+.produto:nth-child(6) .produto-imagem { background-color: #414158; }
+
+.produto-info {
+    padding: 17px;
+}
+
+.produto-info h3 {
+    margin: 4px 0;
+}
+
+.produto-info p {
+    color: #b9b9c8;
+    font-size: 13px;
+}
+
+.preco {
+    color: #65ded8;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    padding: 22px 7%;
+    border-top: 1px solid #343449;
+    color: #b9b9c8;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    margin-left: 15px;
+}
+
+footer a:hover {
+    color: #65ded8;
+}
+
+/* Ajustes para tablets e celulares */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+    }
+
+    .banner-imagem {
+        font-size: 90px;
+    }
+
+    .categorias,
+    .lista-produtos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .categorias,
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo {
+        width: 90%;
+        padding: 35px 0;
+    }
+
+    .formulario {
+        padding: 22px;
+    }
+
+    .cabecalho-produtos h1 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer a {
+        margin: 0 8px;
+    }
+}
